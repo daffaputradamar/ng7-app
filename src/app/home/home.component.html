@@ -1,0 +1,37 @@
+<h1>Home</h1>
+
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar" alt="">
+    <p>{{ user.first_name }} {{ user.last_name }}</p>
+  </li>
+</ul>
+
+
+<!-- <h1 [class.gray]="h1Style">Home</h1> -->
+
+<!-- <button (click)="firstClick()">click</button>
+
+<hr>
+
+<h2 [ngClass]="{
+  'gray': h2Style,
+  'large': !h2Style
+}">Home Again</h2>
+<button (click)="secondClick()">click</button>
+
+<hr>
+
+<h3 [style.color]="h3Style ? 'gray' : 'black'">
+  Home Again & Again
+</h3>
+<button (click)="thirdClick()">click</button>
+
+<hr>
+
+<h3 [ngStyle]="{
+  'color': h4Style ? 'gray' : 'black',
+  'font-size': !h4Style ? '2em' : '1em'
+}">Home Again & Again &
+  Again</h3>
+<button (click)="fourthClick()">click</button> -->
